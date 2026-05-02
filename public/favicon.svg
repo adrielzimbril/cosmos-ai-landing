@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cosmos AI">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="18%" r="86%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".22" />
+      <stop offset=".38" stop-color="#1a1a1a" />
+      <stop offset="1" stop-color="#030303" />
+    </radialGradient>
+    <linearGradient id="ring" x1="13" y1="9" x2="51" y2="55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".9" />
+      <stop offset=".44" stop-color="#f8efbd" stop-opacity=".45" />
+      <stop offset="1" stop-color="#e3ffd6" stop-opacity=".72" />
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)" />
+  <circle cx="32" cy="32" r="22.5" fill="none" stroke="url(#ring)" stroke-width="2.4" opacity=".92" />
+  <path d="M16.5 38.5c8.5 6.2 22.5 6.2 31 0" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2" stroke-linecap="round" />
+  <path d="M32 14.5l3.75 10.2 10.85 1.05-8.25 7.05 2.45 10.65L32 37.85l-8.8 5.6 2.45-10.65-8.25-7.05 10.85-1.05L32 14.5z" fill="#f8f8f8" filter="url(#glow)" />
+  <circle cx="32" cy="32" r="4.5" fill="#030303" />
+  <circle cx="32" cy="32" r="2.1" fill="#f8efbd" />
+</svg>
